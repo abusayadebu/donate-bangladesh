@@ -4,23 +4,20 @@ for(const button of donateActionButton){
     // noakhaliBtn clicked
     const NoakhaliBtn = button.addEventListener("click", function(){
         const noakhaliInputNumber = getInputFieldValueById("noakhali-input");
-
-        const mainBalance = document.getElementById("main-balance").innerText;
-        const mainBalanceNumber = parseInt(mainBalance);
-        
-        const mainUpdateBalance = mainBalanceNumber - noakhaliInputNumber;
+        const mainBalance = getTextValuebyId("main-balance"); 
+        const mainUpdateBalance = mainBalance - noakhaliInputNumber;
 
         // show the main balance
         document.getElementById("main-balance").innerText = mainUpdateBalance;
-        const noaKhaliDonation = document.getElementById("noakhali-donation").innerText;
-        const noaKhaliDonationNumber = parseInt(noaKhaliDonation);
+        const noaKhaliDonation = getTextValuebyId("noakhali-donation")
 
-        const noaKhaliDonationtotal = noaKhaliDonationNumber + noakhaliInputNumber;
+        const noaKhaliDonationtotal = noaKhaliDonation + noakhaliInputNumber;
         
         // show the noakhali total balance-
         document.getElementById("noakhali-donation").innerText = noaKhaliDonationtotal;
-
-        
         
     })
+
+    
+
 }
