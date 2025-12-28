@@ -1,3 +1,10 @@
+
+
+// when blogBTn clicked 
+const blogButton = document.getElementById("blog-btn").addEventListener("click", function(){
+    window.location.href = "blog.html"
+})
+
 // whne historybtn clicked
 const historyBtn = document.getElementById("btn-history").addEventListener("click", function(){
     const donationCardSection = getSectionById("donation-card-section");
@@ -14,3 +21,4 @@ const donationBtn = document.getElementById("btn-donation").addEventListener("cl
     donationCardSection.classList.remove("hidden");
     historySection.classList.add("hidden");
 })
+

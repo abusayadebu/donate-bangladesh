@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font cdn -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- daisyUi and tailwind cdn here -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Blog</title>
+
+    <style>
+        .font-lexend{
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body class="font-lexend min-w-full border- border-red-400">
+    <header>
+        <!-- navbar starts hee -->
+         <nav class="flex justify-around items-center bg-red-100 border border-blue-400 h-[150px]">
+                <button id="Home-btn" class="btn bg-green-400 text-lg">Home</button>
+
+                <!-- nav middle div -->
+                <div class="hidden lg:flex items-center gap-2">
+                    <img class="" src="/assets/logo.png" alt="">
+                    <h1 class="text-2xl">Donate Bangladesh</h1>
+                </div>
+
+                <!-- nav end div -->
+                <div class="flex justify-between gap-2">
+                    <img class="" src="/assets/coin.png" alt="">
+                    <div id="main-balance" class="text-xl">5500 BDT</div>
+                </div>            
+         </nav>
+    </header>
+
+    <!-- main section starts here -->
+    <main class="lg:w-10/12 mx-auto py-20">
+        <h1 class="text-4xl mb-10">Important FAQ's</h1>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+    <input type="radio" name="my-accordion-2" checked="checked" />
+    <div class="collapse-title font-semibold">What is the DOM?</div>
+    <div class="collapse-content text-sm">The DOM (Document Object Model) is a way for JavaScript to interact with HTML pages.
+It represents the page as a tree of elements, so you can read, change, add, or remove elements using JS.</div>
+    </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+    <input type="radio" name="my-accordion-2" checked="checked" />
+    <div class="collapse-title font-semibold">What is the difference between innerText and innerHTML?</div>
+    <div class="collapse-content text-sm">innerText represents only the visible text inside an element, ignoring any HTML tags.
+innerHTML represents the content inside an element, including HTML tags, so it can create new elements dynamically.</div>
+    </div>
+
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+    <input type="radio" name="my-accordion-2" checked="checked" />
+    <div class="collapse-title font-semibold">What is the difference between inline events and JavaScript event listeners?</div>
+    <div class="collapse-content text-sm">Inline events are written directly in the HTML element, which makes the code less organized. JavaScript event listeners are written in JS files and can attach multiple actions to the same element without cluttering HTML.</div>
+    </div>
+     
+    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+    <input type="radio" name="my-accordion-2" checked="checked" />
+    <div class="collapse-title font-semibold">What is an event in JavaScript?</div>
+    <div class="collapse-content text-sm">An event is something that happens on a webpage, like:
+        <ol>
+            <li>Clicking a button (click) </li>
+            <li>Typing in an input box (input or keyup)</li>
+            <li>Moving the mouse (mouseover)</li>
+        </ol>
+You can use JS to respond when these events happen.</div>
+    </div>
+    </main>
+    
+
+
+    <!-- footer section starts here -->
+    <footer>
+
+    </footer>
+
+
+
+    <!-- script sources are here -->
+     <script src="/js/blog.js"></script>
+    
+</body>
+</html>
+
