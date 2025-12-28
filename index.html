@@ -47,14 +47,13 @@
 
     <!-- main section starts here -->
      <main>
-        <!-- hero section starts here -->
-         <section class="hero-section text-center my-20">
-            <button class="btn btn-donation bg-green-400 text-lg px-8 py-8">Donation</button>
-            <button class="btn btn-history bg-green-400 text-lg px-8 py-8">History</button>
-
+        <!-- hero section/donation section starts here -->
+         <section id="" class="hero-section text-center my-20">
+            <button id="btn-donation" class="btn bg-green-400 text-lg px-8 py-8">Donation</button>
+            <button id="btn-history" class="btn bg-green-400 text-lg px-8 py-8">History</button>
 
             <!-- card-container section starts here -->
-            <section class="card-container mt-20">
+            <section id="donation-card-section" class="card-container mt-20">
 
                 <!-- card one starts here -->
                 <div class="card-one bg-base-100 w-11/12 mx-auto shadow-sm lg:flex p-10 gap-10 items-center">
@@ -119,7 +118,7 @@
             </section>
             
             <!-- history section starts here -->
-             <section id="history-section" class="w-11/12 mx-auto text-center my-20">
+             <section id="history-section" class="hidden w-11/12 mx-auto text-center my-20">
                 <h1 class="text-3xl font-bold-bold">Ttransaction History</h1>
              </section>
 
@@ -134,5 +133,6 @@
       <!-- js files src here -->
        <script src="/js/utilities.js"></script>
        <script src="/js/donation.js"></script>
+       <script src="/js/toggles.js"></script>
 </body>
 </html>
