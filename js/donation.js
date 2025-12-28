@@ -15,16 +15,18 @@ for(const button of donateActionButton){
         const feniDonation = getTextValuebyId("feni-donation");
         const quotaDonation = getTextValuebyId("quota-donation");
 
+
         // noakhali btn
-        if(button.id === "noakhali-btn"){
+        if(noakhaliInputNumber !== 0 && !isNaN(noakhaliInputNumber) && button.id === "noakhali-btn"){
             const updateBalance = mainBalance - noakhaliInputNumber;
             const updateNoakhali = noaKhaliDonation + noakhaliInputNumber;
             // show main and noakhali balance
             document.getElementById("main-balance").innerText = updateBalance;
             document.getElementById("noakhali-donation").innerText = noakhaliInputNumber;
         }
+
         // feni btn
-         else if (button.id === "feni-btn") {
+         else if (feniInputNumber !== 0 && !isNaN(feniInputNumber) && button.id === "feni-btn") {
 
             const updatedMain = mainBalance - feniInputNumber;
             const updatedFeni = feniDonation + feniInputNumber;
@@ -32,9 +34,11 @@ for(const button of donateActionButton){
             document.getElementById("main-balance").innerText = updatedMain;
             document.getElementById("feni-donation").innerText = updatedFeni;
         }
+        
+
 
         // Quota button
-        else if (button.id === "quota-btn") {
+        else if (quotaInputNumber !== 0 && !isNaN(quotaInputNumber) && button.id === "quota-btn") {
 
             const updatedMain = mainBalance - quotaInputNumber;
             const updatedQuota = quotaDonation + quotaInputNumber;
@@ -42,6 +46,14 @@ for(const button of donateActionButton){
             document.getElementById("main-balance").innerText = updatedMain;
             document.getElementById("quota-donation").innerText = updatedQuota;
         }
+
+        else{
+            alert("sorry number na")
+        }
+        
+
+
+        
         
     })
 
