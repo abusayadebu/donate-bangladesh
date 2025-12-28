@@ -11,3 +11,10 @@ function getTextValuebyId(id){
     const textvalueNumber = parseInt(textValue);
     return textvalueNumber;
 }
+
+// to get whole section by id
+
+function getSectionById(id){
+    const gotSection = document.getElementById(id);
+    return gotSection;
+}

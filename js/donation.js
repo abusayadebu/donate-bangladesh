@@ -34,8 +34,6 @@ for(const button of donateActionButton){
             document.getElementById("main-balance").innerText = updatedMain;
             document.getElementById("feni-donation").innerText = updatedFeni;
         }
-        
-
 
         // Quota button
         else if (quotaInputNumber !== 0 && !isNaN(quotaInputNumber) && button.id === "quota-btn") {
@@ -46,17 +44,33 @@ for(const button of donateActionButton){
             document.getElementById("main-balance").innerText = updatedMain;
             document.getElementById("quota-donation").innerText = updatedQuota;
         }
-
         else{
             alert("sorry number na")
         }
-        
 
 
-        
-        
+        // transaction history here
+        const historySection = getSectionById("history-section");
+        const p = document.createElement("p");
+        p.classList = "border border-green-400 p-5 rounded-xl mb-2 mt-2"
+
+        const date = new Date();
+
+        if(button.id === "noakhali-btn"){
+            p.innerText = `${noakhaliInputNumber} Taka is Donated for Noakhali Flood 2024 at Noakhali | Date: ${date}`;
+        }
+        else if(button.id === "feni-btn"){
+            p.innerText = `${feniInputNumber} Taka is Donated for Feni Flood at 2024 at Feni | Date: ${date}`;
+        }
+        else if(button.id ==="quota-btn"){
+            p.innerText = `${quotaInputNumber} Taka is Donated for Quot Movement 2024 in bangladesh | Date ${date}`;
+        }
+
+
+        // append p to the history section
+        historySection.appendChild(p);
+    
     })
 
-    
 
 }
